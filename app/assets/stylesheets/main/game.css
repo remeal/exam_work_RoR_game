@@ -1,0 +1,23 @@
+#map{
+    width: 100%;
+    height: 600px;
+}
+.image{
+    margin-left: 22%;
+}
+.guess-button{
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    background-color: #0f4c81;
+    color: #FFF;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 40%;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Russo One', sans-serif;
+}
+

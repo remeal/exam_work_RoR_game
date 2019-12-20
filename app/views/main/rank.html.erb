@@ -1,0 +1,25 @@
+<body style="background: white;">
+<h2><%=t('main.rank.title') %></h2>
+
+<table>
+  <thead>
+  <tr>
+    <th><%= t('main.rank.email') %></th>
+    <th><%= t('main.rank.score') %></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.email %></td>
+      <td><%= user.score %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('main.rank.back'), root_path %>
+</body>

@@ -1,0 +1,40 @@
+<body style="background: #FFF;">
+<h2><%= t('main.game.quiz') %></h2>
+<%= image_tag ('/assets/' + @image.to_s + '.png'), class: 'image'%>
+<div id="map"></div>
+<%= form_tag(result_path, :method => "get") do %>
+  <%= submit_tag(t('main.game.guess-button'), class: 'guess-button') %>
+<%end %>
+<script type="text/javascript">
+  var marker;
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: {lat: 25.363882, lng: 131.044922 }
+        });
+        map.addListener('click', function(e) {
+            placeMarkerAndPanTo(e.latLng, map);
+        });
+    }
+    function placeMarkerAndPanTo(latLng, map) {
+        marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+        });
+        map.panTo(latLng);
+        var latcor = marker.getPosition().lat();
+        var lngcor = marker.getPosition().lng();
+        jQuery.ajax({
+            data: {'lat':  latcor, 'lng': lngcor},
+            dataType: 'script',
+            type: 'get',
+            url: "/main/getcoordinate",
+        });
+    }
+</script>
+</body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD7GsmIWKbUv32iGbXTTNwXnSIAygfM7iE&callback=initMap"></script>
+<script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+<script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

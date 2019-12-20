@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t('layouts.application.title') %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <% if user_signed_in? %>
+    <span><%=t('layouts.application.hello') %><%= current_user.email %></span>
+    <%= link_to t('layouts.application.exit'), destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to t('layouts.application.enter'), new_user_session_path %> или <%= link_to t('layouts.application.registration'), new_user_registration_path %>
+  <% end %>
+  <ul class="language">
+    <li><%= link_to "Русский", {locale: :rus} %></li>
+    <li><%= link_to 'English', {locale: :en}  %></li>
+  </ul>
+  <%= yield %>
+  </body>
+</html>

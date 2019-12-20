@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption|Russo+One&display=swap');
+html {
+    position: relative;
+    min-height: 100%;
+}
+body
+{
+    background: url(/assets/backgroundview.png) no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 40px;
+    font-family: 'Russo One', sans-serif;
+}
+.input-form{
+    text-align: center;
+}
+.start-game{
+    margin-top: 200px ;
+    margin-bottom: 100px;
+}
+.rank-button{
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    background-color: #0f4c81;
+    color: #FFF;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+.start-button{
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    background-color: #0f4c81;
+    color: #FFF;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+

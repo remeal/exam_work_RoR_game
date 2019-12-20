@@ -1,0 +1,16 @@
+#map{
+    width: 100%;
+    height: 600px;
+}
+.play-again{
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    background-color:  #0f4c81;
+    color: #FFF;
+    font-family: 'PT Sans Caption', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 40%;
+    font-weight: bold;
+}

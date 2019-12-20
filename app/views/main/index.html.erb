@@ -1,0 +1,8 @@
+<div class="input-form">
+  <%= form_tag(game_path, :method => "get", class: "start-game") do %>
+    <%= submit_tag(t('main.index.start-button'), class: "start-button")%>
+  <% end %>
+  <%= form_tag(rank_path, :method => "get") do %>
+    <%= submit_tag(t('main.index.rank-button'), class: "rank-button") %>
+  <% end %>
+</div>

@@ -1,0 +1,43 @@
+rus:
+  main:
+    game:
+      quiz: 'Как вы думаете, где это находится?'
+      guess-button: 'Угадать'
+    index:
+      start-button: 'Начать игру'
+      rank-button: 'Рейтинг'
+    rank:
+      title: 'Рейтинг'
+      email: 'Пользователи'
+      score: 'Баллы'
+      back: 'Назад'
+    result:
+      miss-first: 'Вы промахнулись на '
+      miss-second: ' км'
+      earn-first: 'Вы заработали '
+      earn-second: ' баллов'
+      play-again: "Сыграть заново"
+  layouts:
+    application:
+      title: 'Проект'
+      hello: 'Здравствуйте, '
+      enter: 'Войти'
+      exit: 'Выйти'
+      registration: 'Зарегистрироваться'
+  devise:
+    sessions:
+      new:
+        enter-title: 'Вход'
+        enter-btn: 'Войти'
+    registrations:
+      new-title: 'Регистрация'
+      new-btn: 'Зарегистрироваться'
+    shared:
+      links:
+        enter-title: 'Вход'
+        new-title: 'Регистрация'
+        forgot-password: 'Забыли пароль?'
+    passwords:
+      title: 'Забыли пароль?'
+      btn: 'Отправить инструкции по восстановлению на почту'
+

@@ -1,0 +1,39 @@
+<body style="background: #FFF;">
+<div id="map"></div>
+<h2><%= @name%></h2>
+<h2><%=t('main.result.miss-first') + @distance.to_s + t('main.result.miss-second')%></h2>
+<h2><%= t('main.result.earn-first')+ @score.to_s + t('main.result.earn-second')%></h2>
+<%= form_tag(root_path, :method => "get") do %>
+  <%= submit_tag(t('main.result.play-again'), class: 'play-again') %>
+<%end %>
+</body>
+<script type="text/javascript">
+  function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 3,
+            center: {lat: 0, lng: 100},
+            mapTypeId: 'terrain'
+      });
+      var lat = <%= @lat.to_f %>;
+      var lng = <%= @lng.to_f %>;
+      var latcor = <%= @latcor.to_f %>;
+      var lngcor = <%= @lngcor.to_f %>;
+      var flightPlanCoordinates = [
+            {lat: lat, lng: lng },
+            {lat: latcor, lng: lngcor}
+            ];
+      var flightPath = new google.maps.Polyline({
+            path: flightPlanCoordinates,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+      });
+      var marker = new google.maps.Marker({position: {lat: lat, lng: lng}, map: map});
+      var marker = new google.maps.Marker({position: {lat: latcor, lng: lngcor}, map: map});
+      flightPath.setMap(map);
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD7GsmIWKbUv32iGbXTTNwXnSIAygfM7iE&callback=initMap"></script>
+<script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+<script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script>

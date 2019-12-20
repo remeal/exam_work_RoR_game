@@ -1,0 +1,42 @@
+en:
+  main:
+    game:
+      quiz: 'Where is it?'
+      guess-button: 'Guess'
+    index:
+      start-button: 'Play'
+      rank-button: 'Top list'
+    rank:
+      title: 'Top list'
+      email: 'Users'
+      score: 'Points'
+      back: 'Back'
+    result:
+      miss-first: 'You missed at '
+      miss-second: ' km'
+      earn-first: 'You earned '
+      earn-second: ' points'
+      play-again: "Play again"
+  layouts:
+    application:
+      title: 'Project'
+      hello: 'Hello, '
+      exit: 'Exit'
+      enter: 'Log in'
+      registration: 'Sign up'
+  devise:
+    sessions:
+      new:
+        enter-title: 'Log in'
+        enter-btn: 'Log in'
+    registrations:
+      new-title: 'Sign in'
+      new-btn: 'Sign up'
+    shared:
+      links:
+        enter-title: 'Log in'
+        new-title: 'Sign up'
+        forgot-password: 'Forgot password?'
+    passwords:
+      title: 'Forgot password?'
+      btn: 'Send instruction on email'
