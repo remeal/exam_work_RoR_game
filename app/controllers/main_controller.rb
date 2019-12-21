@@ -28,7 +28,7 @@ class MainController < ApplicationController
 
   #Вывод рейтинга
   def rank
-    @users = User.all
+    @users = User.all.order(score: :desc)
   end
 
 private
