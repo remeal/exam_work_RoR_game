@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="765c62b1-a498-49a4-b27d-1806e7fb7d55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="765c62b1-a498-49a4-b27d-1806e7fb7d55" name="Default Changelist" comment="add order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/config/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/game.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/game.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/result.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/result.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1UqRJDv52GcQjoqICqYsCfYRnYx" />
   <component name="PropertiesComponent">
@@ -198,8 +200,18 @@
       <workItem from="1576830119223" duration="2858000" />
       <workItem from="1576846653031" duration="676000" />
       <workItem from="1576850467131" duration="157000" />
-      <workItem from="1576932265541" duration="520000" />
+      <workItem from="1576932265541" duration="3176000" />
+      <workItem from="1577055023196" duration="2716000" />
+      <workItem from="1577108219149" duration="838000" />
     </task>
+    <task id="LOCAL-00001" summary="add order">
+      <created>1576932854253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576932854253</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,5 +229,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add order" />
+    <option name="LAST_COMMIT_MESSAGE" value="add order" />
   </component>
 </project>
